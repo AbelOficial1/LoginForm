@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Test</title>
+	<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+	<header>
+		<h1>¿Qué estilo de aprendizaje eres?</h1>
+		<p>Descúbrelo</p>
+	</header>
+
+	<div class="container">
+		<section id="p0">
+		    <h3>Cuál de las siguientes actividades disfrutas mas?</h3>
+		    <label>
+		        <input type="radio" value="1" value="p0" onclick="respuesta(0,this)">Escuchar buena musica
+		    </label>
+		    <label>
+		        <input type="radio" value="2" value="p0" onclick="respuesta(0,this)">Ver peliculas
+		    </label>
+		    <label>
+		        <input type="radio" value="3" value="p0" onclick="respuesta(0,this)">Bailar con buena musica
+		    </label>
+		</section>
+		<section id="p1">
+		    <h3>¿Qué programa de televisión prefieres?</h3>
+		    <label>
+		        <input type="radio" value="1" name="p1" onclick="respuesta(1,this)">Reportajes de descubrimientos y lugares
+		    </label>
+		    <label>
+		        <input type="radio" value="2" name="p1" onclick="respuesta(1,this)">Cómico y de entretenimiento
+		    </label>
+		    <label>
+		        <input type="radio" value="3" name="p1" onclick="respuesta(1,this)">Noticias del mundo
+		    </label>
+		</section>
+		<section id="p2">
+		    <h3>Cuando conversas con otra persona, tú:</h3>
+		    <label>
+		        <input type="radio" value="1" name="p2" onclick="respuesta(2,this)">La escuchas atentamente
+		    </label>
+		    <label>
+		        <input type="radio" value="2" name="p2" onclick="respuesta(2,this)">La observas
+		    </label>
+		    <label>
+		        <input type="radio" value="3" name="p2" onclick="respuesta(2,this)">Tiendes a tocarla
+		    </label>
+		</section>
+		<section id="p3">
+		    <h3>Si pudieras adquirir uno de los siguientes artículos, ¿cuál elegirías?</h3>
+		    <label>
+		        <input type="radio" value="1" name="p3" onclick="respuesta(3,this)">Jacuzzi
+		    </label>
+		    <label>
+		        <input type="radio" value="2" name="p3" onclick="respuesta(3,this)">Estereo
+		    </label>
+		    <label>
+		        <input type="radio" value="3" name="p3" onclick="respuesta(3,this)">Televisor
+		    </label>
+		</section>
+		<section id="p4">
+		    <h3>¿Qué prefieres hacer un sábado por la tarde?</h3>
+		    <label>
+		        <input type="radio" value="1" name="p4" onclick="respuesta(4,this)">Quedarte en casa
+		    </label>
+		    <label>
+		        <input type="radio" value="2" name="p4" onclick="respuesta(4,this)">Ir a un concierto
+		    </label>
+		    <label>
+		        <input type="radio" value="3" name="p4" onclick="respuesta(4,this)">Ir al cine
+		    </label>
+		</section>
+		<section id="p5">
+		    <h3>¿Qué tipo de exámenes se te facilitan más?</h3>
+		    <label>
+		        <input type="radio" value="1" name="p5" onclick="respuesta(5,this)">Examen oral
+		    </label>
+		    <label>
+		        <input type="radio" value="2" name="p5" onclick="respuesta(5,this)">Examen escrito
+		    </label>
+		    <label>
+		        <input type="radio" value="3" name="p5" onclick="respuesta(5,this)">Examen de opción múltiple
+		    </label>
+		</section>
+		<section id="p6">
+		    <h3>¿Cómo te orientas más fácilmente?</h3>
+		    <label>
+		        <input type="radio" value="1" name="p6" onclick="respuesta(6,this)">Mediante el uso de un mapa
+		    </label>
+		    <label>
+		        <input type="radio" value="2" name="p6" onclick="respuesta(6,this)">Pidiendo indicaciones
+		    </label>
+		    <label>
+		        <input type="radio" value="3" name="p6" onclick="respuesta(6,this)">A través de la intuición
+		    </label>
+		</section>
+		<section id="p7">
+		    <h3>¿En qué prefieres ocupar tu tiempo en un lugar de descanso?</h3>
+		    <label>
+		        <input type="radio" value="1" name="p7" onclick="respuesta(7,this)">Pensar
+		    </label>
+		    <label>
+		        <input type="radio" value="2" name="p7" onclick="respuesta(7,this)">Caminar por los alrededores
+		    </label>
+		    <label>
+		        <input type="radio" value="3" name="p7" onclick="respuesta(7,this)">Descansar
+		    </label>
+		</section>
+		<section id="p8">
+		    <h3>¿Qué te halaga más?</h3>
+		    <label>
+		        <input type="radio" value="1" name="p8" onclick="respuesta(8,this)">Que te digan que tienes buen aspecto
+		    </label>
+		    <label>
+		        <input type="radio" value="2" name="p8" onclick="respuesta(8,this)">Que te digan que tienes un trato muy agradable
+		    </label>
+		    <label>
+		        <input type="radio" value="3" name="p8" onclick="respuesta(8,this)">Que te digan que tienes una conversación interesante
+		    </label>
+		</section>
+		<section id="p9">
+		    <h3>¿Cuál de estos ambientes te atrae más?</h3>
+		    <label>
+		        <input type="radio" value="1" name="p9" onclick="respuesta(9,this)">Uno en el que se sienta un clima agradable
+		    </label>
+		    <label>
+		        <input type="radio" value="2" name="p9" onclick="respuesta(9,this)">Uno en el que se escuchen las olas del mar
+		    </label>
+		    <label>
+		        <input type="radio" value="3" name="p9" onclick="respuesta(9,this)">Uno con una hermosa vista al océano
+		    </label>
+		</section>
+		<section id="p10">
+		    <h3>¿De qué manera se te facilita aprender algo?</h3>
+		    <label>
+		        <input type="radio" value="1" name="p10" onclick="respuesta(10,this)">Repitiendo en voz alta
+		    </label>
+		    <label>
+		        <input type="radio" value="2"  name="p10" onclick="respuesta(10,this)">Escribiéndolo varias veces
+		    </label>
+		    <label>
+		        <input type="radio" value="3" name="p10" onclick="respuesta(10,this)">Relacionándolo con algo divertido
+		    </label>
+		</section>
+		<section id="p11">
+		    <h3>¿A qué evento preferirías asistir?</h3>
+		    <label>
+		        <input type="radio" value="1" name="p11" onclick="respuesta(11,this)">A una reunión social
+		    </label>
+		    <label>
+		        <input type="radio" value="2" name="p11" onclick="respuesta(11,this)">A una exposición de arte
+		    </label>
+		    <label>
+		        <input type="radio" value="3" name="p11" onclick="respuesta(11,this)">A una conferencia
+		    </label>
+		</section>
+		<section id="p12">
+		    <h3>¿De qué manera te formas una opinión de otras personas?</h3>
+		    <label>
+		        <input type="radio" value="1" name="p12" onclick="respuesta(12,this)">Por la sinceridad en su voz
+		    </label>
+		    <label>
+		        <input type="radio" value="2" name="p12" onclick="respuesta(12,this)">Por la forma de estrecharte la mano
+		    </label>
+		    <label>
+		        <input type="radio" value="3" name="p12" onclick="respuesta(12,this)">Por su aspecto
+		    </label>
+		</section>
+		<section id="p13">
+		    <h3>¿Cómo te consideras?</h3>
+		    <label>
+		        <input type="radio" value="1" name="p13" onclick="respuesta(13,this)">Atlético
+		    </label>
+		    <label>
+		        <input type="radio" value="2" name="p13" onclick="respuesta(13,this)">Intelectual
+		    </label>
+		    <label>
+		        <input type="radio" value="3" name="p13" onclick="respuesta(13,this)">Sociable
+		    </label>
+		</section>
+		<section id="p14">
+		    <h3>¿Qué tipo de películas te gustan más?</h3>
+		    <label>
+		        <input type="radio" value="1" name="p14" onclick="respuesta(14,this)">Clásicas
+		    </label>
+		    <label>
+		        <input type="radio" value="2" name="p14" onclick="respuesta(14,this)">De acción
+		    </label>
+		    <label>
+		        <input type="radio" value="3" name="p14" onclick="respuesta(14,this)">De comedia
+		    </label>
+		</section>
+		<section id="p15">
+		    <h3>¿Cómo prefieres mantenerte en contacto con otra persona?</h3>
+		    <label>
+		        <input type="radio" value="1" name="p15" onclick="respuesta(15,this)">Por correo electrónico
+		    </label>
+		    <label>
+		        <input type="radio" value="2" name="p15" onclick="respuesta(15,this)">Tomando un café juntos
+		    </label>
+		    <label>
+		        <input type="radio" value="3" name="p15" onclick="respuesta(15,this)">Por teléfono
+		    </label>
+		</section>
+
+		<section id="p16">
+		    <h3>¿Cuál de las siguientes frases se identifican más contigo?</h3>
+		    <label>
+		        <input type="radio" value="1" name="p16" onclick="respuesta(16,this)">Me gusta que mi coche se sienta bien al conducirlo
+		    </label>
+		    <label>
+		        <input type="radio" value="2" name="p16" onclick="respuesta(16,this)">Percibo hasta el más ligero ruido que hace mi coche
+		    </label>
+		    <label>
+		        <input type="radio" value="3" name="p16" onclick="respuesta(16,this)">Es importante que mi coche esté limpio por fuera y por dentro
+		    </label>
+		</section>
+
+		<section id="p17">
+		    <h3>¿Cómo prefieres pasar el tiempo con tu novia o novio?</h3>
+		    <label>
+		        <input type="radio" value="1" name="p17" onclick="respuesta(17,this)">Conversando
+		    </label>
+		    <label>
+		        <input type="radio" value="2" name="p17" onclick="respuesta(17,this)">Acariciándose
+		    </label>
+		    <label>
+		        <input type="radio" value="3" name="p17" onclick="respuesta(17,this)">Mirando algo juntos
+		    </label>
+		</section>
+
+		<section id="p18">
+		    <h3>Si no encuentras las llaves en una bolsa</h3>
+		    <label>
+		        <input type="radio" value="1" name="p18" onclick="respuesta(18,this)">La buscas mirando
+		    </label>
+		    <label>
+		        <input type="radio" value="2" name="p18" onclick="respuesta(18,this)">Sacudes la bolsa para oír el ruido
+		    </label>
+		    <label>
+		        <input type="radio" value="3" name="p18" onclick="respuesta(18,this)">Buscas al tacto
+		    </label>
+		</section>
+
+		<section id="p19">
+		    <h3>Cuando tratas de recordar algo, ¿cómo lo haces?</h3>
+		    <label>
+		        <input type="radio" value="1" name="p19" onclick="respuesta(19,this)">A través de imágenes
+		    </label>
+		    <label>
+		        <input type="radio" value="2" name="p19" onclick="respuesta(19,this)">A través de emociones
+		    </label>
+		    <label>
+		        <input type="radio" value="3" name="p19" onclick="respuesta(19,this)">A través de sonidos
+		    </label>
+		</section>
+
+		<section id="p20">
+		    <h3>Si tuvieras dinero, ¿qué harías?</h3>
+		    <label>
+		        <input type="radio" value="1" name="p20" onclick="respuesta(20,this)">Comprar una casa
+		    </label>
+		    <label>
+		        <input type="radio" value="2" name="p20" onclick="respuesta(20,this)">Viajar y conocer el mundo
+		    </label>
+		    <label>
+		        <input type="radio" value="3" name="p20" onclick="respuesta(20,this)">Adquirir un estudio de grabación
+		    </label>
+		</section>
+
+		<section id="p21">
+		    <h3>¿Con qué frase te identificas más?</h3>
+		    <label>
+		        <input type="radio" value="1" name="p21" onclick="respuesta(21,this)">Reconozco a las personas por su voz
+		    </label>
+		    <label>
+		        <input type="radio" value="2" name="p21" onclick="respuesta(21,this)">No recuerdo el aspecto de la gente
+		    </label>
+		    <label>
+		        <input type="radio" value="3" name="p21" onclick="respuesta(21,this)">Recuerdo el aspecto de alguien, pero no su nombre
+		    </label>
+		</section>
+
+		<section id="p22">
+		    <h3>Si tuvieras que quedarte en una isla desierta, ¿qué preferirías llevar contigo?</h3>
+		    <label>
+		        <input type="radio" value="1" name="p22" onclick="respuesta(22,this)">Algunos buenos libros
+		    </label>
+		    <label>
+		        <input type="radio" value="2" name="p22" onclick="respuesta(22,this)">Un radio portátil de alta frecuencia
+		    </label>
+		    <label>
+		        <input type="radio" value="3" name="p22" onclick="respuesta(22,this)">Golosinas y comida enlatada
+		    </label>
+		</section>
+
+		<section id="p23">
+		    <h3>¿Cuál de los siguientes entretenimientos prefieres?</h3>
+		    <label>
+		        <input type="radio" value="1" name="p23" onclick="respuesta(23,this)">Tocar un instrumento musical
+		    </label>
+		    <label>
+		        <input type="radio" value="2" name="p23" onclick="respuesta(23,this)">Sacar fotografías
+		    </label>
+		    <label>
+		        <input type="radio" value="3" name="p23" onclick="respuesta(23,this)">Actividades manuales
+		    </label>
+		</section>
+
+		<section id="p24">
+		    <h3>¿Cómo es tu forma de vestir?</h3>
+		    <label>
+		        <input type="radio" value="1" name="p24" onclick="respuesta(24,this)">Impecable
+		    </label>
+		    <label>
+		        <input type="radio" value="2" name="p24" onclick="respuesta(24,this)">Informal
+		    </label>
+		    <label>
+		        <input type="radio" value="3" name="p24" onclick="respuesta(24,this)">Muy informal
+		    </label>
+		</section>
+
+		<section id="p25">
+		    <h3>¿Qué es lo que más te gusta de una fogata nocturna?</h3>
+		    <label>
+		        <input type="radio" value="1" name="p25" onclick="respuesta(25,this)">El calor del fuego y los bombones asados
+		    </label>
+		    <label>
+		        <input type="radio" value="2" name="p25" onclick="respuesta(25,this)">El sonido del fuego quemando la leña
+		    </label>
+		    <label>
+		        <input type="radio" value="3" name="p25" onclick="respuesta(25,this)">Mirar el fuego y las estrellas
+		    </label>
+		</section>
+
+		<section id="p26">
+		    <h3>¿Cómo se te facilita entender algo?</h3>
+		    <label>
+		        <input type="radio" value="1" name="p26" onclick="respuesta(26,this)">Cuando te lo explican verbalmente
+		    </label>
+		    <label>
+		        <input type="radio" value="2" name="p26" onclick="respuesta(26,this)">Cuando utilizan medios visuales
+		    </label>
+		    <label>
+		        <input type="radio" value="3" name="p26" onclick="respuesta(26,this)">Cuando se realiza a través de alguna actividad
+		    </label>
+		</section>
+
+		<section id="p27">
+		    <h3>¿Por qué te distingues?</h3>
+		    <label>
+		        <input type="radio" value="1" name="p27" onclick="respuesta(27,this)">Por tener una gran intuición
+		    </label>
+		    <label>
+		        <input type="radio" value="2" name="p27" onclick="respuesta(27,this)">Por ser un buen conversador
+		    </label>
+		    <label>
+		        <input type="radio" value="3" name="p27" onclick="respuesta(27,this)">Por ser un buen observador
+		    </label>
+		</section>
+
+		<section id="p28">
+		    <h3>¿Qué es lo que más disfrutas de un amanecer?</h3>
+		    <label>
+		        <input type="radio" value="1" name="p28" onclick="respuesta(28,this)">La emoción de vivir un nuevo día
+		    </label>
+		    <label>
+		        <input type="radio" value="2" name="p28" onclick="respuesta(28,this)">Las tonalidades del cielo
+		    </label>
+		    <label>
+		        <input type="radio" value="3" name="p28" onclick="respuesta(28,this)">El canto de las aves
+		    </label>
+		</section>
+
+		<section id="p29">
+		    <h3>Si pudieras elegir, ¿qué preferirías ser?</h3>
+		    <label>
+		        <input type="radio" value="1" name="p29" onclick="respuesta(29,this)">Un gran médico
+		    </label>
+		    <label>
+		        <input type="radio" value="2"  name="p29" onclick="respuesta(29,this)">Un gran músico
+		    </label>
+		    <label>
+		        <input type="radio" value="3" name="p29" onclick="respuesta(29,this)">Un gran pintor
+		    </label>
+		</section>
+
+		<section id="p30">
+		    <h3>Cuando eliges tu ropa, ¿qué es lo más importante para ti?</h3>
+		    <label>
+		        <input type="radio" value="1" name="p30" onclick="respuesta(30,this)">Que sea adecuada
+		    </label>
+		    <label>
+		        <input type="radio" value="2" name="p30" onclick="respuesta(30,this)">Que luzca bien
+		    </label>
+		    <label>
+		        <input type="radio" value="3" name="p30" onclick="respuesta(30,this)">Que sea cómoda
+		    </label>
+		</section>
+
+		<section id="p31">
+		    <h3>¿Qué es lo que más disfrutas de una habitación?</h3>
+		    <label>
+		        <input type="radio" value="1" name="p31" onclick="respuesta(31,this)">Que sea silenciosa
+		    </label>
+		    <label>
+		        <input type="radio" value="2" name="p31" onclick="respuesta(31,this)">Que sea confortable
+		    </label>
+		    <label>
+		        <input type="radio" value="3" name="p31" onclick="respuesta(31,this)">Que esté limpia y ordenada
+		    </label>
+		</section>
+
+		<section id="p32">
+		    <h3>¿Qué es más sexy para ti?</h3>
+		    <label>
+		        <input type="radio" value="1" name="p32" onclick="respuesta(32,this)">Una iluminación tenue
+		    </label>
+		    <label>
+		        <input type="radio" value="2" name="p32" onclick="respuesta(32,this)">El perfume
+		    </label>
+		    <label>
+		        <input type="radio" value="3" name="p32" onclick="respuesta(32,this)">Cierto tipo de música
+		    </label>
+		</section>
+
+		<section id="p33">
+		    <h3>¿A qué tipo de espectáculo preferirías asistir?</h3>
+		    <label>
+		        <input type="radio" value="1" name="p33" onclick="respuesta(33,this)">A un concierto de música
+		    </label>
+		    <label>
+		        <input type="radio" value="2" name="p33" onclick="respuesta(33,this)">A un espectáculo de magia
+		    </label>
+		    <label>
+		        <input type="radio" value="3" name="p33" onclick="respuesta(33,this)">A una muestra gastronómica
+		    </label>
+		</section>
+
+		<section id="p34">
+		    <h3>¿Qué te atrae más de una persona?</h3>
+		    <label>
+		        <input type="radio" value="1" name="p34" onclick="respuesta(34,this)">Su trato y forma de ser
+		    </label>
+		    <label>
+		        <input type="radio" value="2" name="p34" onclick="respuesta(34,this)">Su aspecto físico
+		    </label>
+		    <label>
+		        <input type="radio" value="3" name="p34" onclick="respuesta(34,this)">Su conversación
+		    </label>
+		</section>
+
+		<section id="p35">
+		    <h3>Cuando vas de compras, ¿en dónde pasas mucho tiempo?</h3>
+		    <label>
+		        <input type="radio" value="1" name="p35" onclick="respuesta(35,this)">En una librería
+		    </label>
+		    <label>
+		        <input type="radio" value="2" name="p35" onclick="respuesta(35,this)">En una perfumería
+		    </label>
+		    <label>
+		        <input type="radio" value="3" name="p35" onclick="respuesta(35,this)">En una tienda de discos
+		    </label>
+		</section>
+
+		<section id="p36">
+		    <h3>¿Cuál es tu idea de una noche romántica?</h3>
+		    <label>
+		        <input type="radio" value="1" name="p36" onclick="respuesta(36,this)">A la luz de las velas
+		    </label>
+		    <label>
+		        <input type="radio" value="3" name="p36" onclick="respuesta(36,this)">Con música romántica
+		    </label>
+		    <label>
+		        <input type="radio" value="3" name="p36" onclick="respuesta(36,this)">Bailando tranquilamente
+		    </label>
+		</section>
+
+		<section id="p37">
+		    <h3>¿Qué es lo que más disfrutas de viajar?</h3>
+		    <label>
+		        <input type="radio" value="1" name="p37" onclick="respuesta(37,this)">Conocer personas y hacer nuevos amigos
+		    </label>
+		    <label>
+		        <input type="radio" value="2" name="p37" onclick="respuesta(37,this)">Conocer lugares nuevos
+		    </label>
+		    <label>
+		        <input type="radio" value="3" name="p37" onclick="respuesta(37,this)">Aprender sobre otras costumbres
+		    </label>
+		</section>
+
+		<section id="p38">
+		    <h3>Cuando estás en la ciudad, ¿qué es lo que más echas de menos del campo?</h3>
+		    <label>
+		        <input type="radio" value="1" name="p38" onclick="respuesta(38,this)">El aire limpio y refrescante
+		    </label>
+		    <label>
+		        <input type="radio" value="2" name="p38" onclick="respuesta(38,this)">Los paisajes
+		    </label>
+		    <label>
+		        <input type="radio" value="3" name="p38" onclick="respuesta(38,this)">La tranquilidad
+		    </label>
+		</section>
+
+		<section id="p39">
+		    <h3>Si te ofrecieran uno de los siguientes empleos, ¿cuál elegirías?</h3>
+		    <label>
+		        <input type="radio" value="1" name="p39" onclick="respuesta(39,this)">Director de una estación de radio
+		    </label>
+		    <label>
+		        <input type="radio" value="2" name="p39" onclick="respuesta(39,this)">Director de un club deportivo
+		    </label>
+		    <label>
+		        <input type="radio" value="3" name="p39" onclick="respuesta(39,this)">Director de una revista
+		    </label>
+		</section>
+
+	<button onclick="obtenerResultados()">Revisar</button>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>

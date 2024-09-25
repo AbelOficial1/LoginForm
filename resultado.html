@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados</title>
+    <style>
+        body {
+            font-family: "Noto Sans", sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url(fondo.png);
+            background-repeat: no-repeat;
+            background-size: 100rem;
+        }
+        .resultado {
+            padding: 20px;
+            border-radius: 8px;
+            border-color: white;
+            text-align: center;
+            font-size: 50px;
+        }
+        .visual {
+            color: white;
+        }
+        .auditivo {
+            color: white;
+        }
+        .kinestesico {        
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="resultado" id="resultado"></div>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const option = urlParams.get('option');
+
+        const resultadoDiv = document.getElementById('resultado');
+        let mensaje = '';
+        let clase = '';
+
+        if (option === '1') {
+            mensaje = 'Usted es de aprendizaje Visual';
+            clase = 'visual';
+        } else if (option === '2') {
+            mensaje = 'Usted es de aprendizaje Auditivo';
+            clase = 'auditivo';
+        } else if (option === '3') {
+            mensaje = 'Usted es de aprendizaje Kinestésico';
+            clase = 'kinestesico';
+        }
+
+        resultadoDiv.textContent = mensaje;
+        resultadoDiv.classList.add(clase);
+    </script>
+
+</body>
+</html>
